@@ -1,10 +1,7 @@
 import json
 import os
 from datetime import datetime, timedelta
-try:
-    import requests
-except ImportError:
-    pass
+import requests
 
 
 class Antispaminc():

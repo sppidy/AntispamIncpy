@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime, timedelta
 import requests
-
+from class_types import anc
 
 class Antispaminc():
     '''
@@ -42,5 +42,5 @@ class Antispaminc():
                 raise ApiError('Something Went Wrong. \nError' + seds['full'])
           else:
                 lol = seds['reason']
-                return lol
+                return anc(lol)
           
